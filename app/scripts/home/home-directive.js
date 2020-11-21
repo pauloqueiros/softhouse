@@ -1,11 +1,10 @@
-﻿angular.module("filmes").directive("awFilme", function () {
+﻿angular.module("softhouse").directive("homeTpl", function () {
     return {
-        restrict: "A",
+        restrict: "E",
         scope: {
-            filme: '=awFilme',
-            fnFechar: '&'
+            comunicado: '=',
         },
-        templateUrl: "templates/filme.template.html",
+        templateUrl: "scripts/home/home-tpl.html",
         link: function (scope, element, attr) {
             element.addClass('filme com-cartaz');
 
