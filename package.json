@@ -1,0 +1,26 @@
+{
+  "name": "softhouse",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pauloqueiros/softhouse.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pauloqueiros/softhouse/issues"
+  },
+  "homepage": "https://github.com/pauloqueiros/softhouse#readme",
+  "dependencies": {
+    "angular": "^1.8.2",
+    "angular-route": "^1.8.2",
+    "bootstrap": "^4.5.3",
+    "grunt": "^1.3.0"
+  }
+}
