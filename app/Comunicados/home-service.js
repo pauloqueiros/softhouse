@@ -1,7 +1,7 @@
 (function () {
     'use strict';
 
-    angular.module('softhouse').factory('ComunicadosService', ComunicadosService);
+    angular.module('softhouseApp').factory('ComunicadosService', ComunicadosService);
     ComunicadosService.$inject = ['$http'];
 
     function ComunicadosService($http) {
