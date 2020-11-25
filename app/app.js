@@ -5,5 +5,6 @@ angular.module('softhouseApp', [
   'ngAnimate',
   'ngRoute',
   'ngResource',
-  'homePage'
+  'homePage',
+  'comunicadosPage'
 ]);
