@@ -8,6 +8,8 @@ ComunicadosController.$inject = ['$scope', 'ComunicadosService'];
 
 function ComunicadosController($scope, ComunicadosService) {
 	var vm = this;
+	vm.comunicados = [];
+	vm.arrayComunicados = [];
 	vm.init = init;
 	vm.listarComunicados = listarComunicados;
 	init();
@@ -16,12 +18,15 @@ function ComunicadosController($scope, ComunicadosService) {
 		listarComunicados();
 	}
 
-
 	function listarComunicados() {
-		return ComunicadosService.listarComunicados().then(function (data) {
-			vm.comunicado = data;
+		ComunicadosService.listarComunicados().then(function (data) {
+			angular.forEach(data.data, function (comunicado, id) {
+				comunicado.id = id;
+				vm.comunicados.push(comunicado);
+			});
 		});
 	}
+
 
 	$scope.criarFilme = function () {
 		$scope.filmes.push({
