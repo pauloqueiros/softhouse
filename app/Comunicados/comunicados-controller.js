@@ -20,10 +20,7 @@ function ComunicadosController($scope, ComunicadosService) {
 
 	function listarComunicados() {
 		ComunicadosService.listarComunicados().then(function (data) {
-			angular.forEach(data.data, function (comunicado, id) {
-				comunicado.id = id;
-				vm.comunicados.push(comunicado);
-			});
+				vm.comunicados = data.data[0];
 		});
 	}
 

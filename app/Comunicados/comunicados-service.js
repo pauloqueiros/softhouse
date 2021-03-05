@@ -8,7 +8,7 @@ function ComunicadosService($http) {
         listarComunicados: listarComunicados,
     };
     function listarComunicados() {
-        return $http.get("https://softhouse-d90d8.firebaseio.com/comunicados.json");
+        return $http.get("http://softhouse-com.umbler.net/apartamentos");
     };
 }
 
