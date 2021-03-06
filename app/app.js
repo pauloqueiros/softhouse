@@ -6,5 +6,6 @@ angular.module('softhouseApp', [
   'ngRoute',
   'ngResource',
   'homePage',
-  'comunicadosPage'
+  'comunicadosPage',
+  'moradoresPage'
 ]);

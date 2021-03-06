@@ -1,0 +1,63 @@
+<h2>Morador</h2>
+<div class="card shadow mb-4">
+    <div class="card-header py-3">
+        <h6 class="m-0 font-weight-bold text-primary">
+            <a href="#!/moradores/form" class="btn btn-success btn-icon-split">
+                <span class="icon text-white-50">
+                    <i class="fas fa-check"></i>
+                </span>
+                <span class="text">Novo Morador</span>
+            </a>
+        </h6>
+    </div>
+    <div class="card-body">
+        <div class="table-responsive">
+
+            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th class="text-center">model.IdMorador</th>
+                        <th>model.Nome</th>
+                        <th>model.Email</th>
+                        <th>model.Cpf</th>
+                        <th>model.Telefone</th>
+
+                        <th class="text-center">Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="text-center">item.IdMorador</td>
+                        <td>modelItem => item.Nome</td>
+                        <td>modelItem => item.Email</td>
+                        <td>modelItem => item.Cpf</td>
+                        <td>modelItem => item.Telefone</td>
+                        <td class="text-center">
+
+                            <a href="" class="btn btn-success btn-circle btn-sm">
+                                <i class="fas fa-pencil-alt"></i>
+                            </a>
+
+                            <button class="btn btn-warning btn-circle btn-sm detalhes" data-id="@item.IdMorador"><i
+                                    class="fas fa-info"></i></button>
+                            <button class="btn btn-danger btn-circle btn-sm delete" data-id="@item.IdMorador"><i
+                                    class="fas fa-trash"></i></button>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="modalexcluimorador">
+
+</div>
+
+<div class="modal" id="modallistamorador">
+
+</div>
+
+<!-- Content Row -->
